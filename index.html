@@ -3,12 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZAID.AI // SYSTEM_ARCHITECT</title>
+    <title>ZAID.AI // DATA_ARCHITECT</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -19,43 +18,32 @@
             colors: {
               "primary": "#f20df2", 
               "primary-dark": "#c20ac2",
-              "background-dark": "#050505", // Deep void black
+              "background-dark": "#050505",
               "surface-dark": "#0a0a0a",
-              "glass-border": "#331133",
+              "terminal-bg": "#0c0c0c",
             },
             fontFamily: {
               "display": ["Space Grotesk", "sans-serif"],
               "body": ["Inter", "sans-serif"],
-              "mono": ["Fira Code", "monospace"],
+              "mono": ["JetBrains Mono", "monospace"],
             },
             animation: {
               'float': 'float 6s ease-in-out infinite',
-              'pulse-fast': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'spin-slow': 'spin 60s linear infinite',
-              'glitch': 'glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite',
+              'pulse-glow': 'pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spin-slow': 'spin 20s linear infinite',
             },
             keyframes: {
               float: {
                 '0%, 100%': { transform: 'translateY(0px)' },
                 '50%': { transform: 'translateY(-10px)' },
               },
-              glitch: {
-                '0%': { transform: 'translate(0)' },
-                '20%': { transform: 'translate(-2px, 2px)' },
-                '40%': { transform: 'translate(-2px, -2px)' },
-                '60%': { transform: 'translate(2px, 2px)' },
-                '80%': { transform: 'translate(2px, -2px)' },
-                '100%': { transform: 'translate(0)' }
+              'pulse-glow': {
+                '0%, 100%': { opacity: '1', boxShadow: '0 0 20px rgba(242,13,242,0.2)' },
+                '50%': { opacity: '0.7', boxShadow: '0 0 30px rgba(242,13,242,0.5)' },
               }
             },
             backgroundImage: {
                'grid-pattern': "linear-gradient(to right, #2a152a 1px, transparent 1px), linear-gradient(to bottom, #2a152a 1px, transparent 1px)",
-            },
-            boxShadow: {
-                'brutal': '6px 6px 0px 0px #f20df2',
-                'brutal-sm': '3px 3px 0px 0px #f20df2',
-                'brutal-hover': '8px 8px 0px 0px #f20df2',
-                'glow': '0 0 15px rgba(242, 13, 242, 0.5)',
             }
           }
         }
@@ -63,23 +51,16 @@
     </script>
     <style>
       body { background-color: #050505; color: white; }
-      
-      /* Utilities */
       .scanlines {
-          background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+          background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
           background-size: 100% 4px;
           pointer-events: none;
       }
       .custom-scrollbar::-webkit-scrollbar { width: 6px; }
       .custom-scrollbar::-webkit-scrollbar-track { background: #050505; }
       .custom-scrollbar::-webkit-scrollbar-thumb { background: #f20df2; border-radius: 2px; }
-      
-      .glitch-hover:hover {
-         animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
-         color: #f20df2;
-      }
     </style>
-    <script type="module" crossorigin src="/Portfolio/assets/index-jXvbgbw-.js"></script>
+    <script type="module" crossorigin src="/Portfolio/assets/index-SbKpwqdL.js"></script>
     <link rel="stylesheet" crossorigin href="/Portfolio/assets/index-DQ3P1g1z.css">
   </head>
   <body>
